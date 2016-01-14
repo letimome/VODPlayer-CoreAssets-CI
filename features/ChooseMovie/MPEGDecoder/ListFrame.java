@@ -25,6 +25,8 @@ public class ListFrame extends Frame // movie list frame
 
 	Vector movielist;
 	VODClient parent;
+	
+	
 
 	public ListFrame(ServerReq serverReq, VODClient vODClient) {
 		
