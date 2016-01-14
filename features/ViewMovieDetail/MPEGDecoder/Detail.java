@@ -1,5 +1,7 @@
 /* Decompiled by Mocha from Detail.class */
 /* Originally compiled from Detail.java */
+
+
 package MPEGDecoder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
