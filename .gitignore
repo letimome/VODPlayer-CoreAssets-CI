@@ -1,5 +1,5 @@
 bin/
 .settings/
-features/
+src/
 .classpath
 .project
