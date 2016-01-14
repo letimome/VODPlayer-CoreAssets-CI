@@ -1,5 +1,7 @@
 bin/
 .settings/
 src/
+features/features.config
+features/FeatureHouseFeatureHouse-2011-03-15(3).jar
 .classpath
 .project
