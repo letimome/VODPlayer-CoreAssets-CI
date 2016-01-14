@@ -1,0 +1,5 @@
+bin/
+.settings/
+features/
+.classpath
+.project
