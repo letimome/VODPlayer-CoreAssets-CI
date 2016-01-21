@@ -15,6 +15,7 @@ public class BitInputStream extends BufferedInputStream
     static int bufferindex;
     static int buffersize;
 	static InputStream inputStream;
+	
 
     static 
     {
