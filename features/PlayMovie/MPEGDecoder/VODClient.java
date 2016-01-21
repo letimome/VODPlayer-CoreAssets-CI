@@ -57,7 +57,7 @@ public class VODClient extends Frame
 		super.dispose();
     }
     
-    void setButtonPlay(){//if feature play is included
+    void setButtonPlay(){//if feature play is includedasdadada
     	original();
     	buttonControl2.setLabel("PLAY");
     }
