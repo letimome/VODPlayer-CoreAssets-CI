@@ -53,6 +53,8 @@ public class Video implements Runnable
                 System.out.println("Error during opening stream");
                 return;
             }
+            
+            //asdasda
         }
       
     }
