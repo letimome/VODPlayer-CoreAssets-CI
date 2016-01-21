@@ -10,7 +10,7 @@ final class VODClientListener2 implements ActionListener
 {
     private VODClient this$0 = null;
 
-    VODClientListener2(VODClient vODClient)
+    VODClientListener2(VODClient vODClient) //qeqweqeq
     {
 		this$0 = vODClient;
     }
