@@ -1,5 +1,5 @@
 /* Decompiled by Mocha from ListFrame.class */
-/* Originally compiled from ListFrame.java ****/
+/* Originally compiled from ListFrame.java *******/
 
 package MPEGDecoder;
 import java.awt.*;
