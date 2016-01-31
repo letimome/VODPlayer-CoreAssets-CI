@@ -36,6 +36,7 @@ public class ListFrame extends Frame // movie list frame
 			jbInit();
 		} catch (Exception e) {
 			e.printStackTrace();
+//codigo para arreglar el bug
 		}
 
 	}
