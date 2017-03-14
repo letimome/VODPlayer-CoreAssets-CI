@@ -3,8 +3,17 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'hello'
-        build 'PruebaGitter'
+        parallel(
+          "baseProduct": {
+            echo 'building premium product'
+            sh './features/composePremiumProduct.sh'
+            
+          },
+          "PremiumProduct": {
+            echo 'building Premium Product '
+            sh './features/composeProductBase.sh'
+            
+          }
       }
     }
     stage('Test') {
