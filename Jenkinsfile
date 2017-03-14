@@ -14,8 +14,7 @@ pipeline {
           },
           "PremiumProduct": {
             echo 'building Premium Product '
-            sh 'cd features 
-            ./composeProductBase.sh'
+            sh 'features/composeProductBase.sh'
             
           }
         )
