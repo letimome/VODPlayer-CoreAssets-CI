@@ -1,1 +1,1 @@
-java -jar FeatureHouse.jar --expression ./base-product.config
+java -jar features/FeatureHouse.jar --expression features/base-product.config
