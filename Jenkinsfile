@@ -27,7 +27,8 @@ pipeline {
             
           },
           "Premium": {
-            echo 'testing in premium'
+
+            echo 'testing in premium product'
             
           }
         )
