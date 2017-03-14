@@ -6,14 +6,13 @@ pipeline {
         parallel(
           "baseProduct": {
             echo 'building premium product'
-            sh 'cd features'
-            sh 'ls'
-            sh 'cd features'
-            sh '/composePremiumProduct.sh'
+            sh 'chmod u+x features/composePremiumProduct.sh'
+            sh 'features/composePremiumProduct.sh'
             
           },
           "PremiumProduct": {
             echo 'building Premium Product '
+            sh 'chmod u+x features/composeProductBase.sh'
             sh 'features/composeProductBase.sh'
             
           }
