@@ -14,6 +14,7 @@ pipeline {
             sh './features/composeProductBase.sh'
             
           }
+        )
       }
     }
     stage('Test') {
