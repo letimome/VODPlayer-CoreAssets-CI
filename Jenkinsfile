@@ -5,6 +5,7 @@ pipeline {
       steps {
         echo 'hello'
         build 'PruebaGitter'
+        echo 'hello2'
       }
     }
     stage('Test') {
