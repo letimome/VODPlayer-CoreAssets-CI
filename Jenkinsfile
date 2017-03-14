@@ -22,20 +22,20 @@ pipeline {
     stage('Test') {
       steps {
         parallel(
-          "Chrome": {
-            echo 'testing in chrome'
+          "Base": {
+            echo 'testing in base'
             
           },
-          "Firefox": {
-            echo 'testing in firefox'
+          "Premium": {
+            echo 'testing in premium'
             
           }
         )
       }
     }
-    stage('Deploy') {
+    stage('Propagate to Products - Deploy') {
       steps {
-        echo 'deploying'
+        echo 'deploying to products'
       }
     }
   }
