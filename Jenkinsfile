@@ -6,6 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                build 'VODPlayer-CoreAssets-CI'
             }
         }
         stage('Test') {
