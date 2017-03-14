@@ -7,7 +7,7 @@ pipeline {
           "baseProduct": {
             echo 'building premium product'
             sh 'cd features'
-            sh 'ls
+            sh 'ls'
             sh '/composePremiumProduct.sh'
             
           },
