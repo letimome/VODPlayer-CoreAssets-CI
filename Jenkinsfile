@@ -8,14 +8,14 @@ pipeline {
             echo 'building premium product'
             sh 'cd features'
             sh 'ls'
+            sh 'cd features'
             sh '/composePremiumProduct.sh'
             
           },
           "PremiumProduct": {
             echo 'building Premium Product '
-            sh 'cd features'
-            sh 'ls'
-            sh './composeProductBase.sh'
+            sh 'cd features 
+            ./composeProductBase.sh'
             
           }
         )
