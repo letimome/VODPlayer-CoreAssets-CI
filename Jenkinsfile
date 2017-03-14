@@ -3,28 +3,39 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'hello'
-        build 'PruebaGitter'
-        echo 'hello2'
-      }
-    }
-    stage('Test') {
-      steps {
         parallel(
-          "Chrome": {
-            echo 'testing in chrome'
+          "baseProduct": {
+            echo 'building premium product'
+            sh 'chmod u+x buildScripts/composePremiumProduct.sh'
+            sh 'buildScripts/composePremiumProduct.sh'
             
           },
-          "Firefox": {
-            echo 'testing in firefox'
+          "PremiumProduct": {
+            echo 'building Premium Product '
+            sh 'chmod u+x buildScripts/composeProductBase.sh'
+            sh 'buildScripts/composeProductBase.sh'
             
           }
         )
       }
     }
-    stage('Deploy') {
+    stage('Test') {
       steps {
-        echo 'deploying'
+        parallel(
+          "Base": {
+            echo 'testing in base'
+            
+          },
+          "Premium": {
+            echo 'testing in premium product'
+            
+          }
+        )
+      }
+    }
+    stage('Propagate to Products - Deploy') {
+      steps {
+        echo 'deploying to products'
       }
     }
   }
