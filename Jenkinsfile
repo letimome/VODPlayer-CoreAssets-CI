@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                build 'VODPlayer-CoreAssets-CI'
+                build 'Build-CoreAssets-CI-gitter'
             }
         }
         stage('Test') {
