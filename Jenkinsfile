@@ -1,22 +1,30 @@
-Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent any
-
-    stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        echo 'hello'
+        build 'PruebaGitter'
+      }
     }
+    stage('Test') {
+      steps {
+        parallel(
+          "Chrome": {
+            echo 'testing in chrome'
+            
+          },
+          "Firefox": {
+            echo 'testing in firefox'
+            
+          }
+        )
+      }
+    }
+    stage('Deploy') {
+      steps {
+        echo 'deploying'
+      }
+    }
+  }
 }
