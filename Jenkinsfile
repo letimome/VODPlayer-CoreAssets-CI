@@ -34,9 +34,9 @@ pipeline {
         )
       }
     }
-    stage('Propagate to Products - Deploy') {
+    stage('Release') {
       steps {
-        echo 'deploying to products'
+        echo 'releasing a new core assets base version'
       }
     }
   }
