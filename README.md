@@ -1,0 +1,1 @@
+VODPlayer-CoreAssets CI repository
